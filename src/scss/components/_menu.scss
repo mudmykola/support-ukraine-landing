@@ -1,9 +1,70 @@
 .menu {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 22px;
   &-inner {
     ul {
       display: flex;
       align-items: center;
+
+      li {
+        a {
+          font-size: 14px;
+          line-height: 20px;
+          @extend %font-r;
+          color: $c100;
+        }
+        border: 2px solid transparent;
+        padding: 3px 5px;
+        border-radius: 5px;
+        @extend %dtrans;
+        &:hover {
+          border: 2px solid $c200;
+          @extend %htrans;
+
+          a {
+            color: $c200;
+          }
+        }
+      }
+
+      li + li {
+        margin-left: 40px;
+      }
+    }
+  }
+  &-lang {
+    li {
+      display: none;
+    }
+    &__select {
+      margin: 0 110px;
+      color: $c100;
+      display: flex;
+      align-items: center;
+      border: 1px solid $c100;
+      border-radius: 5px;
+      padding: 3px 5px;
+      cursor: pointer;
+      img {
+        margin-left: 3px;
+      }
+    }
+  }
+  &-phone {
+    display: flex;
+    align-items: center;
+    @extend %dtrans;
+    a {
+      font-size: 16px;
+      line-height: 20px;
+      color: $c100;
+      @extend %font-b;
+    }
+    &:hover {
+      opacity: 0.8;
+      @extend %htrans;
     }
   }
 }
