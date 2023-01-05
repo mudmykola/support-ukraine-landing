@@ -83,4 +83,12 @@
 
 // 320
 @media (max-width: 320px) {
+  .menu {
+    &-inner,
+    &-lang,
+    &-phone {
+      display: none;
+    }
+    justify-content: flex-end;
+  }
 }
