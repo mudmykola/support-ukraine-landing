@@ -71,14 +71,38 @@
 
 // 768
 @media (max-width: 768px) {
+  .menu {
+    &-inner,
+    &-lang,
+    &-phone {
+      display: none;
+    }
+    justify-content: flex-end;
+  }
 }
 
 // 600
 @media (max-width: 600px) {
+  .menu {
+    &-inner,
+    &-lang,
+    &-phone {
+      display: none;
+    }
+    justify-content: flex-end;
+  }
 }
 
 // 480
 @media (max-width: 480px) {
+  .menu {
+    &-inner,
+    &-lang,
+    &-phone {
+      display: none;
+    }
+    justify-content: flex-end;
+  }
 }
 
 // 320

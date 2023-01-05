@@ -2,21 +2,95 @@
   @extend %header-ef;
   width: 100%;
 
-  &-inner {
+  &-content {
+    display: flex;
+    align-items: center;
+    &__text {
+      width: 525px;
+      text-align: right;
+      h1 {
+        font-size: 48px;
+        line-height: 53px;
+        color: $c300;
+        @extend %font-b;
+      }
+      span {
+        color: $c200;
+      }
+      p {
+        font-size: 16px;
+        line-height: 20px;
+        @extend %font-r;
+        color: $c100;
+        margin: 40px 0;
+      }
+      button {
+        width: 230px;
+        height: 38px;
+        @extend %glob-btn;
+        @extend %dtrans;
+      }
+      button:hover {
+        background: $c300;
+        @extend %htrans;
+        color: $c200;
+        box-shadow: 3px 6px 12px rgba(0, 29, 61, 0.2);
+      }
+    }
   }
 }
 // 768
 @media (max-width: 768px) {
+  .header {
+    &-content {
+      margin-top: 50px;
+      flex-direction: column;
+      &__text {
+        width: 100%;
+        text-align: center;
+      }
+    }
+  }
 }
 
 // 600
 @media (max-width: 600px) {
+  .header {
+    &-content {
+      margin-top: 50px;
+      flex-direction: column;
+      &__text {
+        width: 100%;
+        text-align: center;
+      }
+    }
+  }
 }
 
 // 480
 @media (max-width: 480px) {
+  .header {
+    &-content {
+      margin-top: 50px;
+      flex-direction: column;
+      &__text {
+        width: 100%;
+        text-align: center;
+      }
+    }
+  }
 }
 
 // 320
 @media (max-width: 320px) {
+  .header {
+    &-content {
+      margin-top: 50px;
+      flex-direction: column;
+      &__text {
+        width: 100%;
+        text-align: center;
+      }
+    }
+  }
 }

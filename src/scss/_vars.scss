@@ -33,6 +33,13 @@ $default: #fff;
 //button
 
 %glob-btn {
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 20px;
+  @extend %font-b;
+  border: none;
+  padding: 10px 35px;
+  color: $default;
   background: linear-gradient(
     91.77deg,
     #d00000 1.56%,
@@ -41,7 +48,7 @@ $default: #fff;
     rgba(208, 0, 0, 0.79) 100%,
     rgba(208, 0, 0, 0.79) 100%
   );
-  box-shadow: 3px 6px 12px rgba(0, 29, 61, 0.2);
+
   border-radius: 15px;
 }
 
