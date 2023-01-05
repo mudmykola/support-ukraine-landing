@@ -1,0 +1,43 @@
+.info {
+  margin-top: 100px;
+  &-inner {
+    display: flex;
+    align-items: center;
+    &__text {
+      width: 540px;
+      margin-left: 30px;
+      h2 {
+        font-size: 20px;
+        line-height: 30px;
+        @extend %font-b;
+        color: $c100;
+        margin-bottom: 30px;
+      }
+      p + p {
+        margin-top: 15px;
+      }
+      p {
+        font-size: 13px;
+        line-height: 19px;
+        @extend %font-r;
+        color: $c100;
+      }
+    }
+  }
+}
+
+// 768
+@media (max-width: 768px) {
+}
+
+// 600
+@media (max-width: 600px) {
+}
+
+// 480
+@media (max-width: 480px) {
+}
+
+// 320
+@media (max-width: 320px) {
+}
