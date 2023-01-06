@@ -1,0 +1,87 @@
+.dashboard {
+  margin: 100px 0;
+  &-inner {
+    &__title {
+      margin: 0 auto;
+      text-align: left;
+      margin-bottom: 50px;
+
+      h2 {
+        text-align: center;
+        font-size: 20px;
+        line-height: 25px;
+        color: $c100;
+        @extend %font-b;
+        margin-bottom: 50px;
+      }
+      p {
+        margin-bottom: 10px;
+      }
+      p,
+      span {
+        font-size: 14px;
+        line-height: 20px;
+        color: $c100;
+        @extend %font-r;
+      }
+    }
+    &__diag {
+      ul {
+        display: flex;
+        justify-content: center;
+        li {
+          width: 260px;
+          .dashboard-diag {
+            width: 260px;
+            height: 260px;
+            position: relative;
+            margin-bottom: 45px;
+            svg {
+              width: 260px;
+              height: 260px;
+              transform: rotate(10deg);
+              background: transperent;
+              border-radius: 50%;
+            }
+            &__circle {
+              fill: transparent;
+              stroke: $c300;
+              stroke-width: 5;
+            }
+          }
+
+          .diagram-data {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            font-size: 15px;
+            line-height: 20px;
+            @extend %font-b;
+            color: $c200;
+          }
+
+          .circle {
+            fill: transparent;
+            stroke: $c200;
+            stroke-width: 2;
+          }
+          button {
+            @extend %glob-btn;
+            margin: 0 auto;
+            display: block;
+            @extend %dtrans;
+            &:hover {
+              @extend %border-ef;
+              @extend %htrans;
+            }
+          }
+        }
+        li + li {
+          margin-left: 200px;
+        }
+      }
+    }
+  }
+}
