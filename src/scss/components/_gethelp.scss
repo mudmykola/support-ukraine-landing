@@ -1,0 +1,74 @@
+.gethelp {
+  background: #ebebeb;
+  margin-top: 100px;
+  &-inner {
+    padding: 100px 0;
+    h2 {
+      font-size: 20px;
+      line-height: 25px;
+      color: $c100;
+      @extend %font-b;
+      text-align: center;
+    }
+    ul {
+      margin-top: 50px;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(445px, 445px));
+      grid-column-gap: 30px;
+      grid-row-gap: 40px;
+      justify-content: center;
+
+      li {
+        background: rgba(0, 80, 157, 0.1);
+        border-radius: 5px;
+        width: 445px;
+        height: 218px;
+        @extend %dtrans;
+      }
+      li:hover {
+        @extend %border-ef;
+        @extend %htrans;
+      }
+    }
+  }
+  &-card {
+    padding: 42px 31px;
+    &__title {
+      display: flex;
+      align-items: center;
+      margin-bottom: 14px;
+      h2 {
+        font-size: 16px;
+        line-height: 20px;
+        color: $c100;
+        @extend %font-b;
+        margin-left: 5px;
+      }
+      p {
+        font-size: 14px;
+        line-height: 18px;
+        color: $c100;
+        @extend %font-r;
+      }
+    }
+  }
+}
+// 800
+@media (max-width: 800px) {
+}
+
+// 768
+@media (max-width: 768px) {
+}
+
+// 600
+@media (max-width: 600px) {
+}
+
+// 480
+@media (max-width: 480px) {
+}
+
+// 320
+@media (max-width: 320px) {
+}

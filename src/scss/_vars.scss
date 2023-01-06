@@ -53,11 +53,23 @@ $default: #fff;
 }
 
 //effect
+%border-ef {
+  box-shadow: 0px 19px 35px rgba(163, 165, 171, 0.9);
+}
 %header-ef {
   background: linear-gradient(
     180deg,
     rgba(0, 80, 157, 0.08) 0%,
     rgba(0, 80, 157, 0) 100%
+  );
+}
+
+%card-ef {
+  box-shadow: 0px 0px 20px 1px;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 215, 0, 1) 0%,
+    rgba(0, 86, 185, 1) 100%
   );
 }
 
