@@ -69,6 +69,42 @@
   }
 }
 
+// 800
+@media (max-width: 800px) {
+  .menu {
+    &-inner {
+      ul {
+        li {
+          a {
+            font-size: 12px;
+            line-height: 18px;
+          }
+        }
+        li + li {
+          margin-left: 10px;
+        }
+      }
+    }
+    &-lang {
+      &__select {
+        margin: 0 50px;
+        font-size: 12px;
+        line-height: 18px;
+      }
+    }
+    &-phone {
+      img {
+        width: 20px;
+        height: 20px;
+      }
+      a {
+        font-size: 14px;
+        line-height: 18px;
+      }
+    }
+  }
+}
+
 // 768
 @media (max-width: 768px) {
   .menu {
