@@ -53,22 +53,51 @@
     }
   }
 }
-// 800
-@media (max-width: 800px) {
-}
-
-// 768
-@media (max-width: 768px) {
-}
 
 // 600
 @media (max-width: 600px) {
+  .gethelp {
+    margin-top: 50px;
+    &-inner {
+      ul {
+        display: flex;
+        flex-direction: column;
+        li {
+          width: 100%;
+        }
+      }
+    }
+  }
 }
 
 // 480
 @media (max-width: 480px) {
+  .gethelp {
+    margin-top: 50px;
+    &-inner {
+      ul {
+        display: flex;
+        flex-direction: column;
+        li {
+          width: 100%;
+        }
+      }
+    }
+  }
 }
 
 // 320
 @media (max-width: 320px) {
+  .gethelp {
+    margin-top: 50px;
+    &-inner {
+      ul {
+        display: flex;
+        flex-direction: column;
+        li {
+          width: 290px;
+        }
+      }
+    }
+  }
 }
