@@ -1,0 +1,110 @@
+.prog {
+  padding: 100px 0;
+  &-inner {
+    h2 {
+      text-align: center;
+      font-size: 20px;
+      line-height: 25px;
+      color: $c100;
+      @extend %font-b;
+      margin-bottom: 50px;
+    }
+    ul {
+      display: grid;
+      gap: 40px;
+      li {
+        width: 920px;
+        height: 333px;
+        @extend %dtrans;
+        margin: 0 auto;
+      }
+
+      li:hover {
+        @extend %border-ef;
+        @extend %htrans;
+        border-radius: 5px;
+      }
+    }
+  }
+  &-card {
+    display: flex;
+    justify-content: center;
+    &__img {
+      border-radius: 5px 0 0 5px;
+    }
+    &__info {
+      width: 475px;
+      height: 333px;
+      background: $c400;
+      border-radius: 0 5px 5px 0;
+      padding: 55px 21px 56px 30px;
+    }
+    &__title {
+      display: flex;
+      align-items: center;
+      margin-bottom: 40px;
+      span {
+        font-size: 24px;
+        line-height: 30px;
+        color: $c100;
+        @extend %font-b;
+        border: 2px solid #001d3d;
+        border-radius: 5px;
+        padding: 4px 6px 4px 33px;
+      }
+      h2 {
+        margin: 0;
+        font-size: 16px;
+        line-height: 20px;
+        color: $c100;
+        @extend %font-b;
+        margin-left: 36px;
+      }
+    }
+    p {
+      font-size: 14px;
+      line-height: 20px;
+      color: $c100;
+      @extend %font-r;
+    }
+    h3 {
+      font-size: 14px;
+      line-height: 20px;
+      color: $c100;
+      @extend %font-r;
+      margin-top: 15px;
+    }
+    button {
+      margin-top: 45px;
+      width: 230px;
+      height: 38px;
+      @extend %glob-btn;
+      @extend %dtrans;
+      &:hover {
+        @extend %border-ef;
+        @extend %htrans;
+        background: $c300;
+        color: $c200;
+      }
+    }
+  }
+}
+
+// 800
+@media (max-width: 800px) {
+}
+// 768
+@media (max-width: 768px) {
+}
+
+// 600
+@media (max-width: 600px) {
+}
+
+// 480
+@media (max-width: 480px) {
+}
+
+// 320
+@media (max-width: 320px) {
+}
