@@ -48,20 +48,18 @@
               stroke: $c300;
               stroke-width: 5;
             }
+            &__text {
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              text-align: center;
+              font-size: 15px;
+              line-height: 20px;
+              @extend %font-b;
+              color: $c200;
+            }
           }
-
-          .diagram-data {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            text-align: center;
-            font-size: 15px;
-            line-height: 20px;
-            @extend %font-b;
-            color: $c200;
-          }
-
           .circle {
             fill: transparent;
             stroke: $c200;
@@ -80,6 +78,66 @@
         }
         li + li {
           margin-left: 200px;
+        }
+      }
+    }
+  }
+}
+
+// 600
+@media (max-width: 600px) {
+  .dashboard {
+    margin-top: 50px 0;
+    &-inner {
+      &__diag {
+        ul {
+          display: grid;
+          margin: 0 auto;
+          li {
+            button {
+              margin-top: 45px;
+            }
+          }
+          li + li {
+            margin-left: 0;
+            margin-top: 60px;
+          }
+        }
+      }
+    }
+  }
+}
+
+// 480
+@media (max-width: 480px) {
+  .dashboard {
+    margin-top: 50px 0;
+    &-inner {
+      &__diag {
+        ul {
+          flex-direction: column;
+          li + li {
+            margin-left: 0;
+            margin-top: 60px;
+          }
+        }
+      }
+    }
+  }
+}
+
+// 320
+@media (max-width: 320px) {
+  .dashboard {
+    margin-top: 50px 0;
+    &-inner {
+      &__diag {
+        ul {
+          flex-direction: column;
+          li + li {
+            margin-left: 0;
+            margin-top: 60px;
+          }
         }
       }
     }
