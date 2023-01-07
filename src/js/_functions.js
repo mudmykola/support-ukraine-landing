@@ -50,11 +50,17 @@ console.log(mobileCheck());
 // });
 
 // Подключение свайпера
-// import Swiper, { Navigation, Pagination } from 'swiper';
-// Swiper.use([Navigation, Pagination]);
-// const swiper = new Swiper(el, {
-//   slidesPerView: 'auto',
-// });
+import Swiper, { Navigation, Scrollbar, Pagination } from "swiper";
+Swiper.use([Navigation, Scrollbar, Pagination]);
+const swiper = new Swiper(".mySwiper", {
+  slidesPerView: 4,
+  spaceBetween: 20,
+
+  pagination: {
+    el: ".swiper-scrollbar",
+    clickable: true,
+  },
+});
 
 // Подключение анимаций по скроллу
 import AOS from "aos";
