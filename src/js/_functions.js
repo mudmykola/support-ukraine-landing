@@ -60,6 +60,24 @@ const swiper = new Swiper(".mySwiper", {
     el: ".swiper-scrollbar",
     clickable: true,
   },
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 20,
+    },
+    480: {
+      slidesPerView: 2,
+      spaceBetween: 15,
+    },
+    600: {
+      slidesPerView: 3,
+      spaceBetween: 15,
+    },
+    800: {
+      slidesPerView: 4,
+      spaceBetween: 15,
+    },
+  },
 });
 
 // Подключение анимаций по скроллу
