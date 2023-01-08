@@ -5,6 +5,8 @@
 import { mobileCheck } from "./functions/mobile-check";
 console.log(mobileCheck());
 
+import { eventSwiper } from "./functions/events";
+
 // Определение ширины экрана
 // import { isMobile, isTablet, isDesktop } from './functions/check-viewport';
 // if (isDesktop()) {
@@ -79,6 +81,8 @@ const swiper = new Swiper(".mySwiper", {
     },
   },
 });
+
+// Підключення events
 
 // Подключение анимаций по скроллу
 import AOS from "aos";

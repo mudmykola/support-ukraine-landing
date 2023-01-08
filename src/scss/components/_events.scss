@@ -1,3 +1,52 @@
+.events {
+  background: rgba(196, 196, 196, 0.1);
+
+  &-inner {
+    padding: 100px 0;
+    text-align: center;
+    h2 {
+      margin-bottom: 50px;
+    }
+  }
+  &-slider {
+    overflow: hidden;
+    ul {
+      display: flex;
+      align-items: center;
+
+      li {
+        width: 220px;
+        height: 390px;
+        background: $default;
+        box-shadow: 0px 4px 10px rgba(0, 29, 61, 0.1);
+        border-radius: 5px;
+      }
+      li + li {
+        margin-left: 30px;
+      }
+    }
+    &__box {
+      padding: 5px 5px 15px;
+      img {
+        width: 100%;
+      }
+      p {
+        font-size: 14px;
+        line-height: 20px;
+        color: $c100;
+        @extend %font-b;
+        margin: 20px 0 5px;
+      }
+      span {
+        font-size: 14px;
+        line-height: 20px;
+        color: $c100;
+        @extend %font-r;
+      }
+    }
+  }
+}
+
 // 800
 @media (max-width: 800px) {
 }
