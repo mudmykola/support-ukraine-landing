@@ -43,6 +43,7 @@
         margin-bottom: 30px;
       }
       textarea {
+        outline: none;
         border: none;
         background: $c400;
         width: 100%;
@@ -109,16 +110,156 @@
 }
 // 768
 @media (max-width: 768px) {
+  .contact {
+    &-logo {
+      text-align: center;
+    }
+    &-inner {
+      flex-direction: column;
+    }
+    &-form {
+      width: 100%;
+      &__phone {
+        margin-bottom: 20px;
+        img {
+          width: 20px;
+          height: 20px;
+        }
+        a {
+          font-size: 15px;
+          line-height: 20px;
+        }
+      }
+      &__map {
+        img {
+          width: 20px;
+          height: 20px;
+        }
+        p {
+          font-size: 15px;
+          line-height: 20px;
+        }
+      }
+    }
+    &-doc {
+      text-align: center;
+    }
+  }
 }
 
 // 600
 @media (max-width: 600px) {
+  .contact {
+    &-logo {
+      text-align: center;
+    }
+    &-inner {
+      flex-direction: column;
+    }
+    &-form {
+      width: 100%;
+      &__phone {
+        margin-bottom: 20px;
+        img {
+          width: 20px;
+          height: 20px;
+        }
+        a {
+          font-size: 15px;
+          line-height: 20px;
+        }
+      }
+      &__map {
+        img {
+          width: 20px;
+          height: 20px;
+        }
+        p {
+          font-size: 15px;
+          line-height: 20px;
+        }
+      }
+    }
+    &-doc {
+      text-align: center;
+    }
+  }
 }
 
 // 480
 @media (max-width: 480px) {
+  .contact {
+    &-logo {
+      text-align: center;
+    }
+    &-inner {
+      flex-direction: column;
+    }
+    &-form {
+      width: 100%;
+      &__phone {
+        margin-bottom: 20px;
+        img {
+          width: 20px;
+          height: 20px;
+        }
+        a {
+          font-size: 15px;
+          line-height: 20px;
+        }
+      }
+      &__map {
+        img {
+          width: 20px;
+          height: 20px;
+        }
+        p {
+          font-size: 15px;
+          line-height: 20px;
+        }
+      }
+    }
+    &-doc {
+      text-align: center;
+    }
+  }
 }
 
 // 320
 @media (max-width: 320px) {
+  .contact {
+    &-logo {
+      text-align: center;
+    }
+    &-inner {
+      flex-direction: column;
+    }
+    &-form {
+      width: 100%;
+      &__phone {
+        margin-bottom: 20px;
+        img {
+          width: 20px;
+          height: 20px;
+        }
+        a {
+          font-size: 15px;
+          line-height: 20px;
+        }
+      }
+      &__map {
+        img {
+          width: 20px;
+          height: 20px;
+        }
+        p {
+          font-size: 15px;
+          line-height: 20px;
+        }
+      }
+    }
+    &-doc {
+      text-align: center;
+    }
+  }
 }
