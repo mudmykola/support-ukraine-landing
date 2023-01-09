@@ -1,7 +1,7 @@
 .header {
   @extend %header-ef;
   width: 100%;
-
+  // position: relative;
   &-content {
     display: flex;
     align-items: center;

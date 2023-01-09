@@ -1,0 +1,98 @@
+.modal {
+  position: absolute;
+  display: none;
+  background: rgba(0, 29, 61, 0.5);
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  right: 0;
+  &-inner {
+    width: 650px;
+    position: absolute;
+    bottom: 20%;
+    left: 30%;
+    display: flex;
+    flex-direction: column;
+    background: $default;
+    border-radius: 5px;
+    @extend %border-ef;
+    &__box {
+      padding: 50px 30px;
+
+      h2 {
+        text-align: center;
+        font-size: 16px;
+        line-height: 20px;
+        color: $c100;
+        @extend %font-b;
+        margin-bottom: 50px;
+      }
+    }
+  }
+  &-form {
+    display: flex;
+    flex-direction: column;
+    &__input {
+      display: flex;
+      gap: 30px;
+      input {
+        border: none;
+        border-radius: 5px;
+        outline: none;
+        width: 350px;
+        background: $c400;
+        padding: 15px 30px;
+        color: rgba(0, 29, 61, 0.5);
+        font-size: 14px;
+        line-height: 20px;
+        @extend %font-r;
+      }
+    }
+    textarea {
+      padding: 15px 30px;
+      color: rgba(0, 29, 61, 0.5);
+      font-size: 14px;
+      line-height: 20px;
+      @extend %font-r;
+      background: $c400;
+      width: 100%;
+      height: 85px;
+      border: none;
+      border-radius: 5px;
+      outline: none;
+      margin: 30px 0;
+    }
+    button {
+      margin: 0 auto;
+      width: 230px;
+      height: 38px;
+      @extend %glob-btn;
+      @extend %dtrans;
+      &:hover {
+        background: $c300;
+        @extend %htrans;
+        color: $c200;
+        box-shadow: 3px 6px 12px rgba(0, 29, 61, 0.2);
+      }
+    }
+  }
+}
+
+// 800
+@media (max-width: 800px) {
+}
+// 768
+@media (max-width: 768px) {
+}
+
+// 600
+@media (max-width: 600px) {
+}
+
+// 480
+@media (max-width: 480px) {
+}
+
+// 320
+@media (max-width: 320px) {
+}
