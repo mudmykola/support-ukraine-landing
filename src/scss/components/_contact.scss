@@ -1,0 +1,124 @@
+.contact {
+  margin: 100px 0;
+  &-inner {
+    display: flex;
+    justify-content: space-between;
+  }
+  &-form {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    h2 {
+      font-size: 20px;
+      line-height: 25px;
+      color: $c100;
+      @extend %font-b;
+      text-align: center;
+      margin-bottom: 50px;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      h3 {
+        font-size: 16px;
+        line-height: 20px;
+        @extend %font-b;
+        color: $c100;
+        margin-bottom: 50px;
+      }
+      input {
+        border: none;
+        outline: none;
+        background: $c400;
+        border-radius: 5px;
+        padding: 15px 0 15px 30px;
+        width: 100%;
+        color: rgba(0, 29, 61, 0.5);
+        font-size: 14px;
+        line-height: 20px;
+        @extend %font-r;
+        text-transform: capitalize;
+      }
+      input {
+        margin-bottom: 30px;
+      }
+      textarea {
+        border: none;
+        background: $c400;
+        width: 100%;
+        height: 155px;
+        border-radius: 5px;
+        padding-top: 15px;
+        padding-left: 30px;
+        color: rgba(0, 29, 61, 0.5);
+      }
+    }
+    &__phone {
+      display: flex;
+      align-items: center;
+      margin-bottom: 34px;
+      a {
+        font-size: 20px;
+        line-height: 25px;
+        @extend %font-b;
+        color: $c100;
+        margin-left: 11px;
+      }
+    }
+    &__map {
+      display: flex;
+      align-items: center;
+      margin-bottom: 54px;
+      p {
+        font-size: 20px;
+        line-height: 25px;
+        @extend %font-b;
+        color: $c100;
+        margin-left: 11px;
+      }
+    }
+    button {
+      @extend %glob-btn;
+      width: 230px;
+      margin-top: 30px;
+      &:hover {
+        @extend %htrans;
+        background: $c300;
+        color: $c100;
+        @extend %border-ef;
+      }
+    }
+  }
+  &-logo {
+    margin-top: 110px;
+  }
+  &-doc {
+    h2 {
+      font-size: 20px;
+      line-height: 25px;
+      color: $c100;
+      @extend %font-b;
+      text-align: center;
+      margin-bottom: 50px;
+    }
+  }
+}
+
+// 800
+@media (max-width: 800px) {
+}
+// 768
+@media (max-width: 768px) {
+}
+
+// 600
+@media (max-width: 600px) {
+}
+
+// 480
+@media (max-width: 480px) {
+}
+
+// 320
+@media (max-width: 320px) {
+}
