@@ -35,9 +35,33 @@
     }
   }
   &-lang {
-    li {
+    ul {
+      position: absolute;
+      bottom: 0;
+      top: 8%;
+      left: 60%;
+      @extend %header-ef;
+      height: 70px;
+      border: 2px solid $c100;
+      border-radius: 5px;
+      padding: 10px;
+      li {
+        a {
+          color: $c100;
+          @extend %dtrans;
+          &:hover {
+            opacity: 0.6;
+            @extend %htrans;
+          }
+        }
+      }
+      li + li {
+        margin-top: 3px;
+      }
       display: none;
+      @extend %htrans;
     }
+
     &__select {
       margin: 0 110px;
       color: $c100;
@@ -47,7 +71,7 @@
       border-radius: 5px;
       padding: 3px 5px;
       cursor: pointer;
-      img {
+      br img {
         margin-left: 3px;
       }
     }
